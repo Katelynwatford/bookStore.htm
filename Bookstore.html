@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Bookstore</title>
+	</head>
+	<body>
+<script type="text/javascript">
+
+			// FileName:Program_1.html
+			// Programer: Katelyn Watford
+			// Purpose: To calculate discount from orginial price and output originalprice and give the new discounted price.
+				
+			// Global Var
+			
+			var userName;
+			var yearAtSchool;
+			var itemName;
+			var itemQuantity;		
+			var originalPrice;
+			var discount = .37;
+			var total;
+			
+			// input
+			
+			userName = prompt("Please Enter Your Name?");
+			yearsAtSchool = prompt("How many years have you been in school?");
+			itemName = prompt("What would you like to purchase?");
+			originalPrice = prompt("What is the original price?");
+			
+			// calculations:
+			
+			discountPrice = originalPrice - (originalPrice * discount);
+			itemQuantity = prompt("The new price for this item with the dicount is " + discountPrice + ". How many of these are you wanting to purchase: ");
+			total = discountPrice * itemQuantity;
+			
+			//Output
+			
+			document.write("Name:" + " " + userName);
+			document.write("<br>You have been going to school for:" + " " + yearsAtSchool + " " + "year(s).");
+			document.write("<br>You purchased:" + " " + itemQuantity + " " +  itemName);
+			document.write ("<br>The original price is: $" + originalPrice);
+			document.write("<br>The discount price for" + " " + itemName + " " + "$" + discountPrice);
+			document.write("<br>Your total is $" + total);
+		
+</script>
+
+	</body>
+	
+</html>
+
